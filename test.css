@@ -65,6 +65,7 @@ header{
     
 }
 
+
 nav{
     grid-area: nav;
     display: grid;
@@ -88,5 +89,3 @@ aside{
     background-color: red;
     
 }
-
-
