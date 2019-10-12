@@ -47,6 +47,7 @@ img{
 
 @media screen and (max-width:499px){
     
+<<<<<<< HEAD
   .menu:hover{
      justify-content: center;
   }
@@ -54,6 +55,24 @@ img{
   .box{
       width: 100%;
   }
+=======
+}
+
+
+nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "link1 link2 link3 link4";
+    text-align: center;
+}
+
+main{
+    grid-area: main;
+}
+>>>>>>> c4e751faa187fecba7c33ce4ff96c0c063da8332
 
 
 }
