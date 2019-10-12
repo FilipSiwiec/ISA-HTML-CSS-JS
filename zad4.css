@@ -1,0 +1,96 @@
+* {
+   box-sizing: border-box;
+}
+
+/* style wspólne dla wszystkich */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    background: #ddd;
+    overflow: visible;
+}
+
+header {
+    padding: 10px 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+nav {
+    background: #000;
+    color: #FFF;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+/* style specyficzne tylko dla "mobile" */
+@media screen and (max-width:499px) {
+    nav {
+        top: 0px;
+        margin: 0 auto;
+    }
+    nav a {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    nav ul {
+        display: none;
+    }
+    nav:hover ul {
+        display: block;
+    }
+}
+
+/* style tylko dla "tablet" */
+
+@media screen and (max-width:800px) and (min-width:500px) {
+    nav {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+    }
+    body {
+        padding-top: 18px;
+    }
+    nav li {
+        flex: 1;
+    }
+}
+
+/* style dla "tablet" i "desktop" */
+
+@media (min-width: 500px) {
+    .showMenu {
+        display: none;
+    }
+
+    nav li {
+        border-right: 1px solid #FFF;
+    }
+}
